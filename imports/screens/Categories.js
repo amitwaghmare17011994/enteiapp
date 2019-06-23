@@ -35,10 +35,11 @@ class Categories extends Component {
 
   onSearch = text => {
     const { videosForCategory } = this.state
+
     const videosToShow = videosForCategory.filter((video) =>
       (
-        video.videos_title.toLowerCase().includes(text.toLowerCase())
-        || video.videos_desc.toLowerCase().includes(text.toLowerCase()))
+        video && video.videos_title && (video.videos_title.toLowerCase().includes(text.toLowerCase())
+          || video.videos_desc.toLowerCase().includes(text.toLowerCase())))
     )
     this.setState({ videosToShow: videosToShow })
 
