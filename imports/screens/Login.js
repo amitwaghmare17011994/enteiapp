@@ -112,7 +112,7 @@ class Login extends React.Component {
         </View>
 
         <View style={styles.bottomText}>
-          <Text>  Cyborg Softwares</Text>
+          <Text>  Cyborg Systems</Text>
         </View>
       </View>
     );
